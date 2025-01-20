@@ -68,38 +68,12 @@ params:
 
     comments:
         enabled: false
-        provider: disqus
-
-        disqusjs:
-            shortname:
-            apiUrl:
-            apiKey:
-            admin:
-            adminLabel:
+        provider: 
 
         utterances:
             repo:
             issueTerm: pathname
             label:
-
-        beaudar:
-            repo:
-            issueTerm: pathname
-            label:
-            theme:
-
-        remark42:
-            host:
-            site:
-            locale:
-
-        vssue:
-            platform:
-            owner:
-            repo:
-            clientId:
-            clientSecret:
-            autoCreateIssue: false
 
         # Waline client configuration see: https://waline.js.org/en/reference/component.html
         waline:
@@ -198,7 +172,7 @@ menu:
     social:
         - identifier: github
           name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
+          url: https://github.com/Phunzage
           params:
               icon: brand-github
 
