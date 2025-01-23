@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Phunzage Blog</title>
-        <link>https://phunzage.github.io/</link>
-        <description>Recent content on Phunzage Blog</description>
+        <title>Linux on Phunzage Blog</title>
+        <link>https://phunzage.github.io/categories/linux/</link>
+        <description>Recent content in Linux on Phunzage Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Phunzage</copyright>
-        <lastBuildDate>Tue, 21 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://phunzage.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 21 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://phunzage.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Linux发行版杂谈</title>
         <link>https://phunzage.github.io/p/second-blog/</link>
         <pubDate>Tue, 21 Jan 2025 00:00:00 +0000</pubDate>
@@ -61,97 +61,6 @@
 &lt;p&gt;我的感受就是：完全可以，但，是在你的Linux和Windows同时从零经营的环境下。操作系统只是工具，我们的目的是要用它发挥出价值，满足我们的需求，而不是让我们成为系统的附庸。&lt;/p&gt;
 &lt;p&gt;一个经营了许久，和自己使用习惯契合的Windows，并不比刚刚下载从零开始经营的Linux体验差，甚至效果还要好很多。当你疲倦于调整Linux的某个不如意的小功能时，你就开始想念Windows的轻松舒适，开始怀疑自己，我不去现成的Windows看视频玩游戏来搞这些干什么，但倘若你手头有一台新电脑，同时又恰好有想叩响Linux大门的好奇心，那，为什么不来试试呢？&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#dingbu&#34; &gt;点我返回顶部&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>此网站的第一篇文章</title>
-        <link>https://phunzage.github.io/p/first-blog/</link>
-        <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://phunzage.github.io/p/first-blog/</guid>
-        <description>&lt;img src="https://phunzage.github.io/p/first-blog/cat-4864988_1280.jpg" alt="Featured image of post 此网站的第一篇文章" /&gt;&lt;h2 id=&#34;正文&#34;&gt;正文
-&lt;/h2&gt;&lt;p&gt;前前后后捣鼓了有三四个博客网站，从新用户免费3个月的阿里云服务器，到不知名小作坊的8元一个月的虚拟主机，再到后来大名鼎鼎的GitHub page静态托管服务，总之费了不少心血，也学到了很多东西&lt;/p&gt;
-&lt;p&gt;本来是不太喜欢前端技术的，知识太多太杂，还得要求创作者有点美学造诣，感觉自己不是那块料，再加之大一前端技术没学好，网上各种“前端已死”的言论影响，自己就彻底不想摸这些东西了&lt;/p&gt;
-&lt;p&gt;后来无意得知同班好友搞了个贼炫酷的网站，我就很羡慕（我嘴上没说，但是内心：md真的羡慕死了，我也想搞）恰巧那会儿老师让注册了3个月的免费阿里云服务器，就各种查资料，知道了现在的网站大多数是套模板（宝塔面板+wordprass啥的）不用写全栈，就自己也下下来练手，搞了好几天，一度想放弃，这个问题解决了那个问题又来，后来终于是慢慢理解了一切搞出来一个&lt;/p&gt;
-&lt;h3 id=&#34;网站10&#34;&gt;网站1.0
-&lt;/h3&gt;&lt;p&gt;不过后来因为服务器到期和域名备案的原因，删掉了（谁懂最后网站做完了，域名买好了，万事俱备只欠备案的时候和我说免费的服务器不能备案的痛！！）&lt;/p&gt;
-&lt;p&gt;大厂服务器好贵……贵的买不起，我还买不起便宜的吗（笑哭）找了一家卖服务器的小作坊，买了个7.99元一个月的虚拟主机（刚买那会儿：这玩意到底是个Windows还是Linux系统，咋啥也没说，后来：蛙趣这玩意儿这么好用的，环境给你搭好了还不用备案！！！）就花两天时间用同样的方法在原来的基础上做了一个还算满意的网站，和他交换了友链。如下&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://phunzage.github.io/p/first-blog/image-web01.jpg&#34;
-	width=&#34;1280&#34;
-	height=&#34;694&#34;
-	srcset=&#34;https://phunzage.github.io/p/first-blog/image-web01_hu11171556742202572083.jpg 480w, https://phunzage.github.io/p/first-blog/image-web01_hu10756893732351388862.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;网站1.0友链界面&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;184&#34;
-		data-flex-basis=&#34;442px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;友链页面，这是那个好友&lt;/p&gt;
-&lt;p&gt;就这样过了好久……&lt;/p&gt;
-&lt;p&gt;被大数据了，B站给我推了好多建站的视频，忙于学业也没大上心（而且当时觉得自己网站挺不错的就没看别的）后来终于闲下来，发现给我推了一个叫GitHub page的全免费建站的东西，好好好知道我是白嫖怪了……有意思，又发现一个叫Cloudflare的超牛网站（虽然终究没用上）&lt;/p&gt;
-&lt;p&gt;然后就意识到好友网站用的就是GitHub page（和他们啥都知道的人爆了）&lt;/p&gt;
-&lt;p&gt;然后就又删掉了那个网站（没错上面那张是遗照）&lt;/p&gt;
-&lt;h3 id=&#34;网站20&#34;&gt;网站2.0
-&lt;/h3&gt;&lt;p&gt;自己又各种研究查资料动手搞了个下面的网站，把自己域名绑上了（好处是这次网站是真的与天地同寿也不用我交钱了，而且更安全了，GitHub给我升了https）不过精力全用在建站上了，就没力气写多少内容，让本就简洁的界面更加光秃秃……&lt;/p&gt;
-&lt;p&gt;仅有的网站分享也是当时我妹和我要网站做东西，我干脆把我收集的好网站全摞上去了（写了个贼丑的markdown……）&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://phunzage.github.io/p/first-blog/image-web02.png&#34;
-	width=&#34;2560&#34;
-	height=&#34;1375&#34;
-	srcset=&#34;https://phunzage.github.io/p/first-blog/image-web02_hu9564217778264332135.png 480w, https://phunzage.github.io/p/first-blog/image-web02_hu632926802422498945.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;网站2.0主页&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;186&#34;
-		data-flex-basis=&#34;446px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;再到后来，慢慢了解了越来越多的东西，也慢慢觉得自己会的太少太少，这句话不是我说的，网上早就有，不过我是切实感受到了，于是意识到自己的渺小，就想起当年那个励志学会所有电脑知识的小屁孩，苦笑之余强行给他改了梦想——学自己需要的，不要好高骛远，也别摆烂躺平&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;后来知道了Git，意识到可以利用Git批量修改大佬的模板，于是就花了一点时间学了Git，学了个大概，感觉自己能用到的都学了，就想找个项目练练手，巧了不是，找到个超级喜欢的模板，于是果断又把上面这个删了（遗照+1）&lt;/p&gt;
-&lt;h3 id=&#34;网站30&#34;&gt;网站3.0
-&lt;/h3&gt;&lt;p&gt;用Git也遇到一些问题，不过都很快解决了，而且也是跟着教程花了一天时间做了这个依靠GitHub两个仓库交叉搭建起来的网站，（越来越熟练了呢……）满足了&lt;/p&gt;
-&lt;p&gt;慢慢发现，相比后端，正反馈及时的前端好像更能让人快乐一点，想学一点，以前不喜欢前端，但也多亏搞网站的这些天，我从HTML了解到Vue、Ts，从前后端分离概念了解到go数据库编程，从盲目自己造轮子的小白到用Git复刻大佬代码，从一个朋友圈都不发的小宅男到拥有一个展现自我的小网站。&lt;/p&gt;
-&lt;p&gt;​											&lt;em&gt;Jan 20, 2025	——Phunzage&lt;/em&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>归档</title>
-        <link>https://phunzage.github.io/archives/</link>
-        <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://phunzage.github.io/archives/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>关于</title>
-        <link>https://phunzage.github.io/%E5%85%B3%E4%BA%8E/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://phunzage.github.io/%E5%85%B3%E4%BA%8E/</guid>
-        <description>&lt;p&gt;This is a test page for i18n support.&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>搜索</title>
-        <link>https://phunzage.github.io/search/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://phunzage.github.io/search/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>友链</title>
-        <link>https://phunzage.github.io/%E5%8F%8B%E9%93%BE/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://phunzage.github.io/%E5%8F%8B%E9%93%BE/</guid>
-        <description>&lt;p&gt;帅气美丽的小伙伴儿们~&lt;/p&gt;
 </description>
         </item>
         
