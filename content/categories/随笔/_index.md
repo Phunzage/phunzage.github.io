@@ -1,6 +1,6 @@
 ---
 title: "随笔"
-description: "I have a idea"
+description: "I have an idea"
 slug: "随笔"
 image: "svbi.jpg"
 style:

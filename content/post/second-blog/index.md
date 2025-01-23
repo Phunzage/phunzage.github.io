@@ -15,7 +15,7 @@ categories:
 
 记得第一次在电脑上装[Linux](https://www.oracle.com/cn/linux/what-is-linux/)还是在高一，装的是[Pop!_OS](https://pop.system76.com/ )。当时电脑是台二手联想，笔记本处理器魔改的台式机，2G内存，不到900块钱，初一家里买来当刷题机用的（那段时间爸妈单位经常要求刷安全消防类的题目）。
 
-[不想看我啰嗦，点击直达结果](#jieguo)
+[👉不想看我啰嗦，点击直达结果👈](#jieguo)
 
 ### 开端：那些年管我叫活爹的电脑
 
@@ -65,7 +65,7 @@ categories:
 
 ### 结局：问题的答案
 
-我在将近半个月的时间里，把出名的Linux发行版都装了一个遍，从Debian到[Kali](https://www.kali.org/)，从Mint到Pop!_OS，从[openSUSE](https://www.opensuse.org/)到[Fedora](https://fedoraproject.org/)，从KDE到[Gnome](https://www.gnome.org/)。每个发行版都有自己的过人之处，但也有各自的小毛病。不必刻意夸大，也不必刻意深究。
+大二上期末那几周，将近半个月的时间里，我把出名的Linux发行版都装了一个遍，从Debian到[Kali](https://www.kali.org/)，从Mint到Pop!_OS，从[openSUSE](https://www.opensuse.org/)到[Fedora](https://fedoraproject.org/)，从KDE到[Gnome](https://www.gnome.org/)。每个发行版都有自己的过人之处，但也有各自的小毛病。不必刻意夸大，也不必刻意深究。也许你用到的软件现在还没适配Linux；也许你的蓝牙耳机在看视频时突然断连；也许你觉得Gnome的流畅度还有待提高；也许……我想说，再给Linux一点时间，一点时间就好。
 
 
 
@@ -77,8 +77,8 @@ categories:
 
 
 
-一个经营了许久，和自己使用习惯契合的Windows，并不比刚刚下载从零开始经营的Linux体验差，甚至效果还要好很多。当你疲倦于调整Linux的某个不如意的小功能时，你就开始想念Windows的轻松舒适，开始怀疑自己，我不去现成的Windows看视频玩游戏来搞这些干什么，但倘若你手头有一台新电脑，同时又恰好有想叩响Linux大门的好奇心，那，为什么不来试试呢？
+一个经营了许久，和自己使用习惯契合的Windows，并不比刚刚下载从零开始经营的Linux体验差，甚至效果还要好很多。当你疲倦于调整Linux的某个不如意的小功能时，你就开始想念Windows的轻松舒适，开始怀疑自己，我不去现成的Windows看视频玩游戏来搞这些干什么呢。但倘若你手头有一台新电脑，同时又恰好有想叩响Linux大门的好奇心，那，为什么不来试试呢？
 
 
 
-[点我返回顶部](#dingbu)
+[👉点击返回顶部👈](#dingbu)
