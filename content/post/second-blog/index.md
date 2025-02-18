@@ -11,7 +11,7 @@ categories:
 
 <span id="dingbu"></span>
 
-## 引言
+### 引言
 
 记得第一次在电脑上装[Linux](https://www.oracle.com/cn/linux/what-is-linux/)是在高一暑假，装的是[Pop!_OS](https://pop.system76.com/ )。当时电脑是台二手联想，笔记本处理器魔改的台式机，2G内存，不到900块钱，初一家里买来当刷题机用的（那段时间爸妈单位经常要求刷安全消防类的题目）。
 
