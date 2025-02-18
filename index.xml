@@ -2,29 +2,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Phunzage Blog</title>
-        <link>https://phunzage.github.io/</link>
+        <link>http://localhost:1313/</link>
         <description>Recent content on Phunzage Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Phunzage</copyright>
-        <lastBuildDate>Tue, 21 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://phunzage.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 21 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Linux发行版杂谈</title>
-        <link>https://phunzage.github.io/p/second-blog/</link>
+        <link>http://localhost:1313/p/second-blog/</link>
         <pubDate>Tue, 21 Jan 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://phunzage.github.io/p/second-blog/</guid>
-        <description>&lt;img src="https://phunzage.github.io/p/second-blog/linux.jpg" alt="Featured image of post Linux发行版杂谈" /&gt;&lt;p&gt;&lt;span id=&#34;dingbu&#34;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;正文&#34;&gt;正文
+        <guid>http://localhost:1313/p/second-blog/</guid>
+        <description>&lt;img src="http://localhost:1313/p/second-blog/linux.jpg" alt="Featured image of post Linux发行版杂谈" /&gt;&lt;p&gt;&lt;span id=&#34;dingbu&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;引言&#34;&gt;引言
 &lt;/h2&gt;&lt;p&gt;记得第一次在电脑上装&lt;a class=&#34;link&#34; href=&#34;https://www.oracle.com/cn/linux/what-is-linux/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Linux&lt;/a&gt;还是在高一，装的是&lt;a class=&#34;link&#34; href=&#34;https://pop.system76.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Linux&lt;/a&gt;是在高一暑假，装的是&lt;a class=&#34;link&#34; href=&#34;https://pop.system76.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Pop!_OS&lt;/a&gt;。当时电脑是台二手联想，笔记本处理器魔改的台式机，2G内存，不到900块钱，初一家里买来当刷题机用的（那段时间爸妈单位经常要求刷安全消防类的题目）。&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#jieguo&#34; &gt;不想看我啰嗦，点击直达结果&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#jieguo&#34; &gt;👉不想看我啰嗦，点击直达结果👈&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;开端那些年管我叫活爹的电脑&#34;&gt;开端：那些年管我叫活爹的电脑
 &lt;/h3&gt;&lt;p&gt;我从小就羡慕家里有电脑的人家，最喜欢的更是去别人家里蹭电脑玩儿游戏，毕竟即使是那个遍地&lt;a class=&#34;link&#34; href=&#34;https://cn.bing.com/images/search?q=WindowsXP%e7%95%8c%e9%9d%a2&amp;amp;form=HDRSC2&amp;amp;first=1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;WinXP&lt;/a&gt;的年代，电脑上的4399，也比手机上的俄罗斯方块、扫雷更吸引小孩子的兴趣。后来家里终于有了台电脑，欣喜若狂，初见的那天中午饭都没咋吃，就扑到电脑上各种捣鼓，不过到底是住宿生吗，没多少时间，也没捣鼓出个啥名堂&lt;/p&gt;
 &lt;p&gt;倒是初三疫情，那一大段的居家，让我有了时间研究，也积累了一些电脑知识。那会儿前台挂着网课，后面左点点右点点其实也不知道在点啥，慢慢发现，我电脑咋这么卡，开个东西老半天，前台挂着网课更是慢的要命，就上网查（那时候养了个好习惯，有啥不会的就知道百度百度）就慢慢知道了硬件不行电脑会卡。自己学着看了电脑的配置，脑子里初步有了硬软件的概念（不看不要紧，反正当时心挺凉的）我那电脑虽然不能说4399稳定不卡吧，但是最起码它开机慢呀（哭~）不过它一套下来不到900呀，炸了我都夸它炸的响！自打那之后，我就开始了我的电脑优化研究之路，看东西、玩小游戏卡，怎么办……&lt;/p&gt;
 &lt;p&gt;硬件不好改我还改不了软件吗。记得当时我去B站找的教程都是：“哪个浏览器速度最快，占用最低，浏览器大横评”，“系统优化指南，让你的电脑飞起来”。巴拉巴拉，再到后来发展到“CPU超频，解锁你电脑的功效上限”，“精简版系统推荐，告别卡顿”，挺难忘的，那段折腾的日子。在自己电脑上试了近10种浏览器，最后好像是停在了&lt;a class=&#34;link&#34; href=&#34;https://browser.yandex.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Yandex&lt;/a&gt;（毛子科技还是有两下子的）；把自己电脑的系统设置改过来改过去，中途改坏过两次，去电脑店花了两次20重做了系统，看了两次我觉得我也行，就去买了我人生中第一个U盘，各种查资料研究，自己尝试并且成功了，从那之后我就再没去过电脑店。后来甚至还用这块儿U盘给同学和妹妹重装过电脑。至于给CPU超频，我没试过，提前查了一下风险太大而且我那CPU不支持，就没搞。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/second-blog/u.jpg&#34;
+	width=&#34;4000&#34;
+	height=&#34;3000&#34;
+	srcset=&#34;http://localhost:1313/p/second-blog/u_hu5448632230286339704.jpg 480w, http://localhost:1313/p/second-blog/u_hu9445056958602757427.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;人生第一块U盘，仍在服役&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
 &lt;p&gt;倒是最后的精简系统让我上了头，当时家里电脑是&lt;a class=&#34;link&#34; href=&#34;https://cn.bing.com/images/search?q=win7&amp;amp;form=HDRSC2&amp;amp;first=1&amp;amp;wlexpsignin=1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Win7旗舰版&lt;/a&gt;，之前看到网上说家庭版占用少一些，我就找来了家庭版的镜像用U盘装到电脑上，也就那样，反正没多大印象。后来了解了精简系统，这玩意儿去除了用户不需要的一些专业功能，优化了进程啥的，反正一顿吹，我就试了，一开始试的&lt;a class=&#34;link&#34; href=&#34;https://cn.bing.com/images/search?q=win10&amp;amp;qs=n&amp;amp;form=QBIR&amp;amp;sp=-1&amp;amp;lq=0&amp;amp;pq=win10&amp;amp;sc=10-5&amp;amp;cvid=539AA5588342467AAAACACC0AC6C4982&amp;amp;ghsh=0&amp;amp;ghacc=0&amp;amp;first=1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Win10&lt;/a&gt;的精简版（因为当时和一个同学聊天，同学他爸给他家电脑装了Win10把我羡慕坏了，当天下午我就找来镜像自己装上了，不过第一次装Win10没经验，哈哈哈找的国内特供Win10，开机给你铺天盖地整俩选项，选择你的保护程序——左边电脑管家右边360，还有倒计时不选就会爆炸，给我吓傻了，最后好像选的是电脑管家，不过老电脑带Win10还是太吃力，就换回去了）作者叫&lt;a class=&#34;link&#34; href=&#34;https://www.pc528.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -37,10 +51,52 @@
     &gt;Ubuntu&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.linuxmint.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Mint&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://manjaro.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Manjaro&lt;/a&gt;好几个，心想万一哪个厉害的Linux突然就自带支持Windows的U盘启动工具呢，然后，当我终于过渡到一个不自带U盘启动工具的Linux的时候，废啦，彻底回不去了……&lt;/p&gt;
+&lt;p&gt;​	&lt;img src=&#34;http://localhost:1313/p/second-blog/l00.jpg&#34;
+	width=&#34;2220&#34;
+	height=&#34;2475&#34;
+	srcset=&#34;http://localhost:1313/p/second-blog/l00_hu4409310118021302843.jpg 480w, http://localhost:1313/p/second-blog/l00_hu3211833781652705394.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;2021年初尝试Linux（Pop!_OS），啥也不懂装驱动&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;89&#34;
+		data-flex-basis=&#34;215px&#34;
+	
+&gt;&lt;/p&gt;
 &lt;p&gt;当时也是网课时期，而且当时腾讯会议没有Linux版本，微信没有Linux版本，QQ的Linux版本粗制滥造，甚至我打不了中文！没错那个Linux它不自带中文输入法，中途自己配置过几次，都已失败告终，面对一片漆黑的&lt;a class=&#34;link&#34; href=&#34;https://cn.bing.com/images/search?q=linux%e7%bb%88%e7%ab%af&amp;amp;form=HDRSC2&amp;amp;first=1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;终端&lt;/a&gt;（那时候还不知道叫终端）感觉自己接下来的电脑使用体验就像这终端一样。总之就是每天打开电脑，对着屏幕发呆，然后打开手机开始上网课。&lt;/p&gt;
 &lt;p&gt;也是巧，后来有一天和一个玩的还不错的初中同学聊天，得知他家住的不远，于是就去他家给U盘装上了Windows回来把电脑救回来了，再次感谢他，此后就苦心经营我的Win7，把Win7玩出花来了，后来有一段时间无聊，就又开始琢磨硬件，把电脑整个拆了两次，清了清灰，也认全了硬件，再后来到高三的时候，碰电脑的时候少了，但是它却坏掉了，推测是主板老化，我修了一天没修好，也放静电也拆散热也清灰，终于没救回来，我也没再管，就这样度过了一段时间没有电脑的真空期，反正是没再碰Linux。&lt;/p&gt;
-&lt;h3 id=&#34;高潮老一辈说当年的日子苦啊&#34;&gt;高潮：老一辈说当年的日子苦啊
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/second-blog/c01.jpg&#34;
+	width=&#34;3000&#34;
+	height=&#34;4000&#34;
+	srcset=&#34;http://localhost:1313/p/second-blog/c01_hu15443050920346176952.jpg 480w, http://localhost:1313/p/second-blog/c01_hu1213765068088575612.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;写文情到浓处，把它从储藏室翻出来了&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;75&#34;
+		data-flex-basis=&#34;180px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/second-blog/c02.jpg&#34;
+	width=&#34;4000&#34;
+	height=&#34;3000&#34;
+	srcset=&#34;http://localhost:1313/p/second-blog/c02_hu4069992782885703532.jpg 480w, http://localhost:1313/p/second-blog/c02_hu9982964054566953791.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;2025年，我把它拆掉当纪念品&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;高潮老一辈说当年的日子苦&#34;&gt;高潮：老一辈说当年的日子苦
 &lt;/h3&gt;&lt;p&gt;毕业那个假期选了好久的笔记本，到手后很喜欢，不过和它一起到来的Win11系统，我用了好久，不好用，各种bug，重拾U盘给装了个Win10系统，一直用着，没出什么问题（&lt;a class=&#34;link&#34; href=&#34;https://www.zhihu.com/question/658400842?write&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;新出的WinN真是太难用了，不如WinN - 1，我心中的神作还是WinM(M &amp;gt; 0且M &amp;lt; N)&lt;/a&gt;）学习专业知识，看看视频，玩玩游戏，各种场景电脑轻松胜任，恍惚间觉得过去的日子有种不真实感。因为提前知道了大二的课程有Linux，所以也算是弥补过去的一个遗憾吧，大二前的暑假把Linux学的差不多了，用的&lt;a class=&#34;link&#34; href=&#34;https://www.centos.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;CentOS&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://www.vmware.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -49,37 +105,37 @@
     &gt;Debian&lt;/a&gt;，先给硬盘分出几十GB的空闲空间，再制作好U盘启动工具（没错还是那个U盘）选好地域和语言，配置分区……选个&lt;a class=&#34;link&#34; href=&#34;https://baike.baidu.com/item/KDE/5108022&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;KDE桌面&lt;/a&gt;，进入系统，看见桌面的那一刻恍如隔世，当年要手敲命令安装（还不一定能装上）的软件现在在软件商店一搜一点就安装好，没有下一步下一步；浏览器搜B站，打出来是“哔哩哔哩”；写个代码吧，写好了运行一下，显示缺少环境组件按照提示敲个命令安装，敲完可以运行了，好耶（&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/weixin_65032328/article/details/136580118&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Windows配置环境变量&lt;/a&gt;出来挨打）去试试微信如何，嗯？为什么微信Windows版这么多年没有的深色模式在Linux版上适配如此精良；去看看设置，好多没见过的实用功能；想改个好看的主题？大胆一点，我要苹果的画风！！主题商店一找一点，同学：哇，你怎么用上了苹果电脑……&lt;/p&gt;
-&lt;p&gt;许多年后，面对家家户户电脑上的Linux，小庞想起了自己尝试安装输入法的那个下午&lt;/p&gt;
+&lt;p&gt;可能许多年后，面对家家户户电脑上的Linux，小庞想起了自己尝试安装输入法的那个下午&lt;/p&gt;
 &lt;p&gt;&lt;span id=&#34;jieguo&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&#34;结局问题的答案&#34;&gt;结局：问题的答案
-&lt;/h3&gt;&lt;p&gt;我在将近半个月的时间里，把出名的Linux发行版都装了一个遍，从Debian到&lt;a class=&#34;link&#34; href=&#34;https://www.kali.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;/h3&gt;&lt;p&gt;大二上期末那几周，将近半个月的时间里，我把出名的Linux发行版都装了一个遍，从Debian到&lt;a class=&#34;link&#34; href=&#34;https://www.kali.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Kali&lt;/a&gt;，从Mint到Pop!_OS，从&lt;a class=&#34;link&#34; href=&#34;https://www.opensuse.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;openSUSE&lt;/a&gt;到&lt;a class=&#34;link&#34; href=&#34;https://fedoraproject.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Fedora&lt;/a&gt;，从KDE到&lt;a class=&#34;link&#34; href=&#34;https://www.gnome.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Gnome&lt;/a&gt;。每个发行版都有自己的过人之处，但也有各自的小毛病。不必刻意夸大，也不必刻意深究。&lt;/p&gt;
+    &gt;Gnome&lt;/a&gt;。每个发行版都有自己的过人之处，但也有各自的小毛病。不必刻意夸大，也不必刻意深究。也许你用到的软件现在还没适配Linux；也许你的蓝牙耳机在看视频时突然断连；也许你觉得Gnome的流畅度还有待提高；也许……凡此种种的不如意，我想说，再给Linux一点时间，一点时间就好。&lt;/p&gt;
 &lt;p&gt;那么2025年了，你能在主力PC上安心装Linux了吗。&lt;/p&gt;
 &lt;p&gt;我的感受就是：完全可以，但，是在你的Linux和Windows同时从零经营的环境下。操作系统只是工具，我们的目的是要用它发挥出价值，满足我们的需求，而不是让我们成为系统的附庸。&lt;/p&gt;
-&lt;p&gt;一个经营了许久，和自己使用习惯契合的Windows，并不比刚刚下载从零开始经营的Linux体验差，甚至效果还要好很多。当你疲倦于调整Linux的某个不如意的小功能时，你就开始想念Windows的轻松舒适，开始怀疑自己，我不去现成的Windows看视频玩游戏来搞这些干什么，但倘若你手头有一台新电脑，同时又恰好有想叩响Linux大门的好奇心，那，为什么不来试试呢？&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#dingbu&#34; &gt;点我返回顶部&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;一个经营了许久，和自己使用习惯契合的Windows，并不比刚刚下载从零开始经营的Linux体验差，甚至效果还要好很多。当你疲倦于调整Linux的某个不如意的小功能时，你就开始想念Windows的轻松舒适，开始怀疑自己，我不去现成的Windows看视频玩游戏来搞这些干什么呢。但倘若你手头有一台新电脑，同时又恰好有想叩响Linux大门的好奇心，那，为什么不来试试呢？&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#dingbu&#34; &gt;👉点击返回顶部👈&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>此网站的第一篇文章</title>
-        <link>https://phunzage.github.io/p/first-blog/</link>
+        <link>http://localhost:1313/p/first-blog/</link>
         <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://phunzage.github.io/p/first-blog/</guid>
-        <description>&lt;img src="https://phunzage.github.io/p/first-blog/cat-4864988_1280.jpg" alt="Featured image of post 此网站的第一篇文章" /&gt;&lt;h2 id=&#34;正文&#34;&gt;正文
+        <guid>http://localhost:1313/p/first-blog/</guid>
+        <description>&lt;img src="http://localhost:1313/p/first-blog/cat-4864988_1280.jpg" alt="Featured image of post 此网站的第一篇文章" /&gt;&lt;h2 id=&#34;正文&#34;&gt;正文
 &lt;/h2&gt;&lt;p&gt;前前后后捣鼓了有三四个博客网站，从新用户免费3个月的阿里云服务器，到不知名小作坊的8元一个月的虚拟主机，再到后来大名鼎鼎的GitHub page静态托管服务，总之费了不少心血，也学到了很多东西&lt;/p&gt;
 &lt;p&gt;本来是不太喜欢前端技术的，知识太多太杂，还得要求创作者有点美学造诣，感觉自己不是那块料，再加之大一前端技术没学好，网上各种“前端已死”的言论影响，自己就彻底不想摸这些东西了&lt;/p&gt;
 &lt;p&gt;后来无意得知同班好友搞了个贼炫酷的网站，我就很羡慕（我嘴上没说，但是内心：md真的羡慕死了，我也想搞）恰巧那会儿老师让注册了3个月的免费阿里云服务器，就各种查资料，知道了现在的网站大多数是套模板（宝塔面板+wordprass啥的）不用写全栈，就自己也下下来练手，搞了好几天，一度想放弃，这个问题解决了那个问题又来，后来终于是慢慢理解了一切搞出来一个&lt;/p&gt;
 &lt;h3 id=&#34;网站10&#34;&gt;网站1.0
 &lt;/h3&gt;&lt;p&gt;不过后来因为服务器到期和域名备案的原因，删掉了（谁懂最后网站做完了，域名买好了，万事俱备只欠备案的时候和我说免费的服务器不能备案的痛！！）&lt;/p&gt;
 &lt;p&gt;大厂服务器好贵……贵的买不起，我还买不起便宜的吗（笑哭）找了一家卖服务器的小作坊，买了个7.99元一个月的虚拟主机（刚买那会儿：这玩意到底是个Windows还是Linux系统，咋啥也没说，后来：蛙趣这玩意儿这么好用的，环境给你搭好了还不用备案！！！）就花两天时间用同样的方法在原来的基础上做了一个还算满意的网站，和他交换了友链。如下&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://phunzage.github.io/p/first-blog/image-web01.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/first-blog/image-web01.jpg&#34;
 	width=&#34;1280&#34;
 	height=&#34;694&#34;
-	srcset=&#34;https://phunzage.github.io/p/first-blog/image-web01_hu11171556742202572083.jpg 480w, https://phunzage.github.io/p/first-blog/image-web01_hu10756893732351388862.jpg 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/first-blog/image-web01_hu11171556742202572083.jpg 480w, http://localhost:1313/p/first-blog/image-web01_hu10756893732351388862.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;网站1.0友链界面&#34;
@@ -98,10 +154,10 @@
 &lt;h3 id=&#34;网站20&#34;&gt;网站2.0
 &lt;/h3&gt;&lt;p&gt;自己又各种研究查资料动手搞了个下面的网站，把自己域名绑上了（好处是这次网站是真的与天地同寿也不用我交钱了，而且更安全了，GitHub给我升了https）不过精力全用在建站上了，就没力气写多少内容，让本就简洁的界面更加光秃秃……&lt;/p&gt;
 &lt;p&gt;仅有的网站分享也是当时我妹和我要网站做东西，我干脆把我收集的好网站全摞上去了（写了个贼丑的markdown……）&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://phunzage.github.io/p/first-blog/image-web02.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/first-blog/image-web02.png&#34;
 	width=&#34;2560&#34;
 	height=&#34;1375&#34;
-	srcset=&#34;https://phunzage.github.io/p/first-blog/image-web02_hu9564217778264332135.png 480w, https://phunzage.github.io/p/first-blog/image-web02_hu632926802422498945.png 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/first-blog/image-web02_hu9564217778264332135.png 480w, http://localhost:1313/p/first-blog/image-web02_hu632926802422498945.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;网站2.0主页&#34;
@@ -122,35 +178,39 @@
         </item>
         <item>
         <title>归档</title>
-        <link>https://phunzage.github.io/archives/</link>
+        <link>http://localhost:1313/archives/</link>
         <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://phunzage.github.io/archives/</guid>
+        <guid>http://localhost:1313/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>关于</title>
-        <link>https://phunzage.github.io/%E5%85%B3%E4%BA%8E/</link>
+        <link>http://localhost:1313/%E5%85%B3%E4%BA%8E/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://phunzage.github.io/%E5%85%B3%E4%BA%8E/</guid>
-        <description>&lt;p&gt;This is a test page for i18n support.&lt;/p&gt;
+        <guid>http://localhost:1313/%E5%85%B3%E4%BA%8E/</guid>
+        <description>&lt;p&gt;&lt;em&gt;上学时最讨厌的就是：开学自我介绍。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;后来慢慢发现：第一天没人记得住你&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;普普通通在校大学生一个，计算机相关专业，INFP&lt;/p&gt;
+&lt;p&gt;想把此网站当成一个朋友圈，与各位朋友一起交流；&lt;/p&gt;
+&lt;p&gt;也想把此网站当作一本小册子，记录自己成长的点点滴滴。&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>搜索</title>
-        <link>https://phunzage.github.io/search/</link>
+        <link>http://localhost:1313/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://phunzage.github.io/search/</guid>
+        <guid>http://localhost:1313/search/</guid>
         <description></description>
         </item>
         <item>
         <title>友链</title>
-        <link>https://phunzage.github.io/%E5%8F%8B%E9%93%BE/</link>
+        <link>http://localhost:1313/%E5%8F%8B%E9%93%BE/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://phunzage.github.io/%E5%8F%8B%E9%93%BE/</guid>
+        <guid>http://localhost:1313/%E5%8F%8B%E9%93%BE/</guid>
         <description>&lt;p&gt;帅气美丽的小伙伴儿们~&lt;/p&gt;
 </description>
         </item>
