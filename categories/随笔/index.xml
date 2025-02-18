@@ -14,8 +14,8 @@
         
         <guid>https://phunzage.github.io/p/second-blog/</guid>
         <description>&lt;img src="https://phunzage.github.io/p/second-blog/linux.jpg" alt="Featured image of post Linux发行版杂谈" /&gt;&lt;p&gt;&lt;span id=&#34;dingbu&#34;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;引言&#34;&gt;引言
-&lt;/h2&gt;&lt;p&gt;记得第一次在电脑上装&lt;a class=&#34;link&#34; href=&#34;https://www.oracle.com/cn/linux/what-is-linux/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h3 id=&#34;引言&#34;&gt;引言
+&lt;/h3&gt;&lt;p&gt;记得第一次在电脑上装&lt;a class=&#34;link&#34; href=&#34;https://www.oracle.com/cn/linux/what-is-linux/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Linux&lt;/a&gt;是在高一暑假，装的是&lt;a class=&#34;link&#34; href=&#34;https://pop.system76.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Pop!_OS&lt;/a&gt;。当时电脑是台二手联想，笔记本处理器魔改的台式机，2G内存，不到900块钱，初一家里买来当刷题机用的（那段时间爸妈单位经常要求刷安全消防类的题目）。&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#jieguo&#34; &gt;👉不想看我啰嗦，点击直达结果👈&lt;/a&gt;&lt;/p&gt;
@@ -125,8 +125,8 @@
         <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
         
         <guid>https://phunzage.github.io/p/first-blog/</guid>
-        <description>&lt;img src="https://phunzage.github.io/p/first-blog/cat-4864988_1280.jpg" alt="Featured image of post 此网站的第一篇文章" /&gt;&lt;h2 id=&#34;正文&#34;&gt;正文
-&lt;/h2&gt;&lt;p&gt;前前后后捣鼓了有三四个博客网站，从新用户免费3个月的阿里云服务器，到不知名小作坊的8元一个月的虚拟主机，再到后来大名鼎鼎的GitHub page静态托管服务，总之费了不少心血，也学到了很多东西&lt;/p&gt;
+        <description>&lt;img src="https://phunzage.github.io/p/first-blog/cat-4864988_1280.jpg" alt="Featured image of post 此网站的第一篇文章" /&gt;&lt;h3 id=&#34;引言&#34;&gt;引言
+&lt;/h3&gt;&lt;p&gt;前前后后捣鼓了有三四个博客网站，从新用户免费3个月的阿里云服务器，到不知名小作坊的8元一个月的虚拟主机，再到后来大名鼎鼎的GitHub page静态托管服务，总之费了不少心血，也学到了很多东西&lt;/p&gt;
 &lt;p&gt;本来是不太喜欢前端技术的，知识太多太杂，还得要求创作者有点美学造诣，感觉自己不是那块料，再加之大一前端技术没学好，网上各种“前端已死”的言论影响，自己就彻底不想摸这些东西了&lt;/p&gt;
 &lt;p&gt;后来无意得知同班好友搞了个贼炫酷的网站，我就很羡慕（我嘴上没说，但是内心：md真的羡慕死了，我也想搞）恰巧那会儿老师让注册了3个月的免费阿里云服务器，就各种查资料，知道了现在的网站大多数是套模板（宝塔面板+wordprass啥的）不用写全栈，就自己也下下来练手，搞了好几天，一度想放弃，这个问题解决了那个问题又来，后来终于是慢慢理解了一切搞出来一个&lt;/p&gt;
 &lt;h3 id=&#34;网站10&#34;&gt;网站1.0
