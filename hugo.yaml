@@ -18,7 +18,7 @@ languages:
         weight: 2
         params:
             sidebar:
-                subtitle: The world is not black or white.
+                subtitle: 欲买桂花同载酒，终不似、少年游。
 
 services:
     # Change it to your Disqus shortname before using
