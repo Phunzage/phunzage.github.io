@@ -1,0 +1,224 @@
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #f8f9fa;
+    margin: 0;
+    font-family: Helvetica, '宋体', Arial, sans-serif;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 5%;
+    border-left: 3px solid #b7ba6b;
+    border-right: 3px solid #b7ba6b;
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hidden-header {
+    transform: translateY(-100%);
+}
+
+.header h1 {
+    font-size: 2vh;
+    color: #6e1ebf;
+    text-align: center;
+    margin: 0;
+    padding: 1vh;
+}
+
+.nav-bar a {
+    font-size: 1.8vh;
+    color: black;
+    margin: 0 1vw;
+    transition: all 0.3s ease;
+}
+
+.nav-bar a:hover {
+    color: #b7ba6b;
+    font-weight: bold;
+}
+
+.main-content {
+    display: flex;
+    padding: 2% 5%;
+    gap: 5%;
+    position: relative;
+}
+
+.about-card {
+    width: 27vw;
+    height: 80vh;
+    background-color: white;
+    box-shadow: rgba(183, 186, 107, 0.4) -5px 5px, rgba(183, 186, 107, 0.3) -10px 10px, rgba(183, 186, 107, 0.2) -15px 15px, rgba(183, 186, 107, 0.1) -20px 20px, rgba(183, 186, 107, 0.05) -25px 25px;
+    border-radius: 10px;
+    padding: 2vh;
+    position: fixed;
+    left: 5%;
+    top: calc(2vh + 8vh);
+    /* 2vh from body padding and header height */
+    transition: top 0.3s ease;
+}
+
+.scrolled-about-card {
+    top: 2vh;
+    /* when scrolled down */
+}
+
+.about-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.about-card h2 {
+    text-align: center;
+    color: #6e1ebf;
+}
+
+.about-card h4 {
+    text-align: center;
+    margin-top: 0.5vh;
+}
+
+.about-card p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.contact-links a img {
+    width: 16px;
+    height: 16px;
+    margin-right: 0.5vw;
+}
+
+.friend-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4vh;
+}
+
+.friend-link {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 1vh 2vw;
+    margin: 1vh 0;
+    width: 80%;
+    text-align: center;
+}
+
+/* 占位符 */
+.t {
+    width: 27vw;
+    height: 80vh;
+}
+
+.blog-section {
+    width: 65%;
+}
+
+.blog-post {
+    height: 30vh;
+    background-color: white;
+    box-shadow: rgba(183, 186, 107, 0.4) 5px 5px, rgba(183, 186, 107, 0.3) 10px 10px, rgba(183, 186, 107, 0.2) 15px 15px, rgba(183, 186, 107, 0.1) 20px 20px, rgba(183, 186, 107, 0.05) 25px 25px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 5vh;
+}
+
+.blog-post img {
+    width: 100%;
+    height: 143px;
+    object-fit: cover;
+}
+
+.blog-post h2 {
+    font-size: 2.5vh;
+    color: black;
+    margin: 1vh;
+}
+
+.blog-post h3 {
+    font-size: 2.5vh;
+    color: black;
+    margin: 3vh;
+}
+
+.blog-post p {
+    font-size: 1.5vh;
+    color: gray;
+    margin: 1vh;
+}
+
+.to-top {
+    display: block;
+    position: fixed;
+    right: 1vw;
+    bottom: 2vh;
+    width: 2vw;
+    min-width: 1vw;
+    height: 2vh;
+    text-align: center;
+    line-height: 2vh;
+    border-radius: 5px;
+    color: white;
+    background-color: #6e1ebf;
+    box-shadow: rgba(110, 30, 191, 0.4) 0px 5px, rgba(110, 30, 191, 0.3) 0px 10px, rgba(110, 30, 191, 0.2) 0px 15px, rgba(110, 30, 191, 0.1) 0px 20px, rgba(110, 30, 191, 0.05) 0px 25px;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .about-card,
+    .scrolled-about-card {
+        position: static;
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin-bottom: 2vh;
+    }
+
+    .t {
+        width: unset;
+        height: 5vh;
+    }
+
+    .blog-section {
+        width: 100%;
+        max-width: 700px;
+    }
+}

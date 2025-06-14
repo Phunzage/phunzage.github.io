@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHUNZAGE BLOG</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+    <div class="header">
+        <h1>PHUNZAGE BLOG</h1>
+        <div class="nav-bar">
+            <a href="#home">主页</a>
+            <a href="#blogs">博客</a>
+            <a href="#notes">笔记</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="about-card">
+            <img src="images/ttx.jpg" alt="Profile Picture">
+            <h2>Phunzage</h2>
+            <h4>About</h4>
+            <p>
+                普通在校大学生，计算机相关专业，INFP。
+            </p><br>
+            <h4>Motto</h4>
+            <p>
+                且视他人之疑目如盏盏鬼火，大胆地去走你的夜路。
+            </p>
+            <div class="contact-links">
+                <a href="#"><img src="images/wechat.png" alt="WeChat Icon"> WeChat</a>
+                <a href="https://github.com/Phunzage" target="_blank"><img src="images/GitHub.png" alt="GitHub Icon"> GitHub</a>
+                <a href="https://space.bilibili.com/505151602?spm_id_from=333.1007.0.0" target="_blank"><img src="images/Bilibili.png" alt="Bilibili Icon"> Bilibili</a>
+            </div>
+            <div class="friend-links">
+                <div class="friend-link"><a href="https://github.com/">--------友链--------</a></div>
+                <div class="friend-link"><a href="#">友链2</a></div>
+                <div class="friend-link"><a href="#">友链3</a></div>
+                <div class="friend-link"><a href="#">友链4</a></div>
+            </div>
+        </div>
+        <!-- 占位符 -->
+        <div class="t"></div>
+        <div class="blog-section">
+            <h2>最近博客</h2>
+            <div class="blog-post">
+                <img src="https://img.alicdn.com/imgextra/i1/O1CN01n5bYVC1LISOAf9gSM_!!6000000001276-2-tps-1232-928.png"
+                    alt="Blog Image 1">
+                <h3>活力的源泉：健康生活的艺术与科学</h3>
+                <p>健康生活不仅仅是关于身体的活力，它是一种全面的生活方式...</p>
+            </div>
+            <div class="blog-post">
+                <img src="https://img.alicdn.com/imgextra/i1/O1CN01n5bYVC1LISOAf9gSM_!!6000000001276-2-tps-1232-928.png"
+                    alt="Blog Image 2">
+                <h3>活力的源泉：健康生活的艺术与科学</h3>
+                <p>健康生活不仅仅是关于身体的活力，它是一种全面的生活方式...</p>
+            </div>
+            <div class="blog-post">
+                <img src="https://img.alicdn.com/imgextra/i1/O1CN01n5bYVC1LISOAf9gSM_!!6000000001276-2-tps-1232-928.png"
+                    alt="Blog Image 3">
+                <h3>活力的源泉：健康生活的艺术与科学</h3>
+                <p>健康生活不仅仅是关于身体的活力，它是一种全面的生活方式...</p>
+            </div>
+            <div class="blog-post">
+                <img src="https://img.alicdn.com/imgextra/i1/O1CN01n5bYVC1LISOAf9gSM_!!6000000001276-2-tps-1232-928.png"
+                    alt="Blog Image 1">
+                <h3>活力的源泉：健康生活的艺术与科学</h3>
+                <p>健康生活不仅仅是关于身体的活力，它是一种全面的生活方式...</p>
+            </div>
+            <div class="blog-post">
+                <img src="https://img.alicdn.com/imgextra/i1/O1CN01n5bYVC1LISOAf9gSM_!!6000000001276-2-tps-1232-928.png"
+                    alt="Blog Image 2">
+                <h3>活力的源泉：健康生活的艺术与科学</h3>
+                <p>健康生活不仅仅是关于身体的活力，它是一种全面的生活方式...</p>
+            </div>
+            <div class="blog-post">
+                <img src="https://img.alicdn.com/imgextra/i1/O1CN01n5bYVC1LISOAf9gSM_!!6000000001276-2-tps-1232-928.png"
+                    alt="Blog Image 3">
+                <h3>活力的源泉：健康生活的艺术与科学</h3>
+                <p>健康生活不仅仅是关于身体的活力，它是一种全面的生活方式...</p>
+            </div>
+        </div>
+    </div>
+    <a class="to-top" href="#top">↑</a>
+
+    <script>
+        let lastScrollTop = 0;
+
+        window.addEventListener('scroll', function () {
+            const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const aboutCard = document.querySelector('.about-card');
+            const header = document.querySelector('.header');
+
+            if (currentScrollTop > 160 && currentScrollTop > lastScrollTop) { // Hide header after scrolling past two blog posts
+                header.classList.add('hidden-header');
+            } else {
+                header.classList.remove('hidden-header');
+            }
+
+            if (currentScrollTop > 80) { // Move about card up after some scroll
+                aboutCard.classList.add('scrolled-about-card');
+            } else {
+                aboutCard.classList.remove('scrolled-about-card');
+            }
+
+            lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
+        }, false);
+    </script>
+</body>
+
+</html>
