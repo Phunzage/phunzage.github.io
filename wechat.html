@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人微信 | PHUNZAGE BLOG</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/index-style.css">
+    <style>
+        /* 主要内容区域 */
+        .qr-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 200px);
+            padding: 2rem 0;
+        }
+
+        .qr-card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            padding: 2.5rem;
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        .qr-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg,
+                    rgba(126, 62, 190, 0.05) 0%,
+                    rgba(183, 186, 107, 0.05) 100%);
+            transform: rotate(30deg);
+            z-index: 1;
+            animation: rotateBg 15s linear infinite;
+        }
+
+        .qr-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .qr-title {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+            position: relative;
+            display: inline-block;
+        }
+
+        .qr-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: var(--secondary);
+            border-radius: 2px;
+        }
+
+        .qr-description {
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        /* 二维码容器优化 */
+        .qr-image-container {
+            width: 260px;
+            height: 260px;
+            margin: 0 auto 2rem;
+            padding: 15px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        /* 图片自适应优化 */
+        .qr-image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            object-fit: contain;
+            /* 确保图片完整显示 */
+        }
+
+        /* 占位符样式优化 */
+        .qr-placeholder {
+            width: 100%;
+            height: 100%;
+            background:
+                linear-gradient(45deg, #f0f0f0 25%, transparent 25%, transparent 75%, #f0f0f0 75%),
+                linear-gradient(45deg, #f0f0f0 25%, transparent 25%, transparent 75%, #f0f0f0 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        .qr-btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .qr-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .qr-btn.secondary {
+            background-color: transparent;
+            color: var(--text-color);
+            border: 2px solid var(--primary);
+        }
+
+        .qr-btn.secondary:hover {
+            background-color: rgba(126, 62, 190, 0.1);
+        }
+
+        /* 动画效果 */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes rotateBg {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .qr-card {
+                padding: 1.5rem;
+                margin: 0 1rem;
+            }
+
+            .qr-image-container {
+                width: 220px;
+                height: 220px;
+            }
+
+            .qr-title {
+                font-size: 1.6rem;
+            }
+
+            .qr-description {
+                font-size: 1rem;
+            }
+
+            .qr-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+    <!-- 顶栏 - 与index.html相同 -->
+    <div class="header">
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">P</div>
+                <h1>PHUNZAGE BLOG</h1>
+            </div>
+            <div class="nav-bar">
+                <a href="index.html" class="nav-link">主页</a>
+                <a href="#blogs" class="nav-link">博客</a>
+                <a href="friends.html" class="nav-link">友链</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 二维码展示区域 -->
+    <div class="container">
+        <div class="qr-container">
+            <div class="qr-card">
+                <div class="qr-content">
+                    <h2 class="qr-title">个人微信</h2>
+                    <p class="qr-description">
+                        欢迎扫描下方二维码添加我的微信<br>
+                        添加时请备注您的姓名和来意，期待与您的交流！
+                    </p>
+                    <div class="qr-image-container">
+                        <!-- 这里放置个人微信二维码 -->
+                        <img src="images/wechat2wm.png" alt="微信二维码">
+                        <div class="qr-placeholder" style="display: none;">个人微信二维码</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主题切换按钮 -->
+    <button class="theme-toggle" id="themeToggle">🌙</button>
+
+    <!-- 返回顶部按钮 -->
+    <a class="to-top" href="#top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </a>
+    <script src="js/index-script.js"></script>
+</body>
+
+</html>

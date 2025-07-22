@@ -1,114 +1,274 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHUNZAGE BLOG</title>
-<link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" href="images/favicon.ico">
+    <title>PHUNZAGE | 个人博客</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/index-style.css">
 </head>
 
 <body id="top">
     <div class="header">
-        <h1>PHUNZAGE BLOG</h1>
-        <div class="nav-bar">
-            <a href="#home">主页</a>
-            <a href="#blogs">博客</a>
-            <a href="#notes">笔记</a>
-        </div>
-    </div>
-    <div class="main-content">
-        <div class="about-card">
-            <img src="images/ttx.jpg" alt="Profile Picture">
-            <h2>Phunzage</h2>
-            <h4>About</h4>
-            <p>
-                普通在校大学生，计算机相关专业，INFP。
-            </p><br>
-            <h4>Motto</h4>
-            <p>
-                且视他人之疑目如盏盏鬼火，大胆地去走你的夜路。
-            </p>
-            <div class="contact-links">
-                <a href="#"><img src="images/wechat.png" alt="WeChat Icon"> WeChat</a>
-                <a href="https://github.com/Phunzage" target="_blank"><img src="images/GitHub.png" alt="GitHub Icon"> GitHub</a>
-                <a href="https://space.bilibili.com/505151602?spm_id_from=333.1007.0.0" target="_blank"><img src="images/Bilibili.png" alt="Bilibili Icon"> Bilibili</a>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">P</div>
+                <h1>PHUNZAGE BLOG</h1>
             </div>
-            <div class="friend-links">
-                <div class="friend-link"><a href="https://github.com/">--------友链--------</a></div>
-                <div class="friend-link"><a href="https://jpsoswer.xyz/" target="_blank">jpsoswer</a></div>
-                <div class="friend-link"><a href="http://rmlin.cn" target="_blank">林的家</a></div>
-                <div class="friend-link"><a href="#">友链4</a></div>
-            </div>
-        </div>
-        <!-- 占位符 -->
-        <div class="t"></div>
-        <div class="blog-section">
-            <h2>最近博客</h2>
-            <div class="blog-post">
-                <img src="https://img.alicdn.com/imgextra/i1/O1CN01n5bYVC1LISOAf9gSM_!!6000000001276-2-tps-1232-928.png"
-                    alt="Blog Image 1">
-                <h3>活力的源泉：健康生活的艺术与科学</h3>
-                <p>健康生活不仅仅是关于身体的活力，它是一种全面的生活方式...</p>
-            </div>
-            <div class="blog-post">
-                <img src="https://img.alicdn.com/imgextra/i1/O1CN01n5bYVC1LISOAf9gSM_!!6000000001276-2-tps-1232-928.png"
-                    alt="Blog Image 2">
-                <h3>活力的源泉：健康生活的艺术与科学</h3>
-                <p>健康生活不仅仅是关于身体的活力，它是一种全面的生活方式...</p>
-            </div>
-            <div class="blog-post">
-                <img src="https://img.alicdn.com/imgextra/i1/O1CN01n5bYVC1LISOAf9gSM_!!6000000001276-2-tps-1232-928.png"
-                    alt="Blog Image 3">
-                <h3>活力的源泉：健康生活的艺术与科学</h3>
-                <p>健康生活不仅仅是关于身体的活力，它是一种全面的生活方式...</p>
-            </div>
-            <div class="blog-post">
-                <img src="https://img.alicdn.com/imgextra/i1/O1CN01n5bYVC1LISOAf9gSM_!!6000000001276-2-tps-1232-928.png"
-                    alt="Blog Image 1">
-                <h3>活力的源泉：健康生活的艺术与科学</h3>
-                <p>健康生活不仅仅是关于身体的活力，它是一种全面的生活方式...</p>
-            </div>
-            <div class="blog-post">
-                <img src="https://img.alicdn.com/imgextra/i1/O1CN01n5bYVC1LISOAf9gSM_!!6000000001276-2-tps-1232-928.png"
-                    alt="Blog Image 2">
-                <h3>活力的源泉：健康生活的艺术与科学</h3>
-                <p>健康生活不仅仅是关于身体的活力，它是一种全面的生活方式...</p>
-            </div>
-            <div class="blog-post">
-                <img src="https://img.alicdn.com/imgextra/i1/O1CN01n5bYVC1LISOAf9gSM_!!6000000001276-2-tps-1232-928.png"
-                    alt="Blog Image 3">
-                <h3>活力的源泉：健康生活的艺术与科学</h3>
-                <p>健康生活不仅仅是关于身体的活力，它是一种全面的生活方式...</p>
+            <div class="nav-bar">
+                <a href="#home" class="nav-link active">主页</a>
+                <a href="#blogs" class="nav-link">博客</a>
+                <a href="friends.html" class="nav-link">友链</a>
             </div>
         </div>
     </div>
-    <a class="to-top" href="#top">up</a>
 
-    <script>
-        let lastScrollTop = 0;
+    <div class="container">
+        <div class="main-content">
+            <aside class="about-card">
+                <div class="profile">
+                    <img src="images/ttx.jpg" alt="Profile Picture" class="profile-img">
+                    <h2>Phunzage</h2>
+                    <span class="profile-tag">personal blog</span>
+                </div>
 
-        window.addEventListener('scroll', function () {
-            const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            const aboutCard = document.querySelector('.about-card');
-            const header = document.querySelector('.header');
+                <div class="about-section">
+                    <h4>About</h4>
+                    <p>
+                        普通在校大学生，计算机相关专业，INFP。
+                    </p>
+                </div>
 
-            if (currentScrollTop > 160 && currentScrollTop > lastScrollTop) { // Hide header after scrolling past two blog posts
-                header.classList.add('hidden-header');
-            } else {
-                header.classList.remove('hidden-header');
-            }
+                <div class="about-section">
+                    <h4>Motto</h4>
+                    <p>
+                        且视他人之疑目如盏盏鬼火，大胆地去走你的夜路。
+                    </p>
+                </div>
 
-            if (currentScrollTop > 80) { // Move about card up after some scroll
-                aboutCard.classList.add('scrolled-about-card');
-            } else {
-                aboutCard.classList.remove('scrolled-about-card');
-            }
+                <div class="contact-links">
+                    <a href="wechat.html" class="contact-link">
+                        <div class="contact-icon">
+                            <img src="images/wechat.png" alt="微信" width="20">
+                        </div>
+                        <span>微信</span>
+                    </a>
+                    <a href="https://github.com/Phunzage" target="_blank" class="contact-link">
+                        <div class="contact-icon">
+                            <img src="images/GitHub.png" alt="GitHub" width="20">
+                        </div>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://space.bilibili.com/505151602" target="_blank" class="contact-link">
+                        <div class="contact-icon">
+                            <img src="images/Bilibili.png" alt="Bilibili" width="20">
+                        </div>
+                        <span>Bilibili</span>
+                    </a>
+                </div>
+            </aside>
 
-            lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
-        }, false);
-    </script>
+            <main class="blog-section">
+                <h2 class="section-title">最近博客</h2>
+
+                <div class="blog-grid">
+                    <article class="blog-card" onclick="location.href='blog/article.html'">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="前端开发">
+                        </div>
+                        <div class="blog-content">
+                            <h3>现代前端框架的演变与未来趋势</h3>
+                            <p>探讨从jQuery到React、Vue和Svelte的演变过程，分析前端开发的未来发展方向...</p>
+                            <div class="blog-meta">
+                                <span>2023-10-15</span>
+                                <div class="read-more">阅读更多 →</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" onclick="location.href='#'">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80"
+                                alt="UI设计">
+                        </div>
+                        <div class="blog-content">
+                            <h3>用户体验设计的核心原则与实践</h3>
+                            <p>如何通过设计思维提升产品体验，创造用户真正喜爱的数字产品...</p>
+                            <div class="blog-meta">
+                                <span>2023-10-08</span>
+                                <div class="read-more">阅读更多 →</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" onclick="location.href='#'">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                                alt="JavaScript">
+                        </div>
+                        <div class="blog-content">
+                            <h3>JavaScript性能优化实战指南</h3>
+                            <p>20个提升JavaScript性能的技巧，涵盖代码优化、内存管理和渲染性能...</p>
+                            <div class="blog-meta">
+                                <span>2023-10-01</span>
+                                <div class="read-more">阅读更多 →</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" onclick="location.href='#'">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80"
+                                alt="全栈开发">
+                        </div>
+                        <div class="blog-content">
+                            <h3>全栈开发者的技术栈演进</h3>
+                            <p>从MERN到JAMStack，现代全栈开发者的技术选择与学习路径...</p>
+                            <div class="blog-meta">
+                                <span>2023-09-24</span>
+                                <div class="read-more">阅读更多 →</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" onclick="location.href='#'">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1555066931-bf19f8fd1085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+                                alt="CSS">
+                        </div>
+                        <div class="blog-content">
+                            <h3>CSS Grid与Flexbox的实战应用</h3>
+                            <p>如何使用现代CSS布局技术创建响应式、灵活的界面设计...</p>
+                            <div class="blog-meta">
+                                <span>2023-09-18</span>
+                                <div class="read-more">阅读更多 →</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" onclick="location.href='#'">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="编程">
+                        </div>
+                        <div class="blog-content">
+                            <h3>编程思维培养：从问题解决到系统设计</h3>
+                            <p>如何培养高效的编程思维模式，提升解决复杂问题的能力...</p>
+                            <div class="blog-meta">
+                                <span>2023-09-10</span>
+                                <div class="read-more">阅读更多 →</div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="blog-card" onclick="location.href='#'">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="前端开发">
+                        </div>
+                        <div class="blog-content">
+                            <h3>现代前端框架的演变与未来趋势</h3>
+                            <p>探讨从jQuery到React、Vue和Svelte的演变过程，分析前端开发的未来发展方向...</p>
+                            <div class="blog-meta">
+                                <span>2023-10-15</span>
+                                <div class="read-more">阅读更多 →</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" onclick="location.href='#'">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80"
+                                alt="UI设计">
+                        </div>
+                        <div class="blog-content">
+                            <h3>用户体验设计的核心原则与实践</h3>
+                            <p>如何通过设计思维提升产品体验，创造用户真正喜爱的数字产品...</p>
+                            <div class="blog-meta">
+                                <span>2023-10-08</span>
+                                <div class="read-more">阅读更多 →</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" onclick="location.href='#'">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                                alt="JavaScript">
+                        </div>
+                        <div class="blog-content">
+                            <h3>JavaScript性能优化实战指南</h3>
+                            <p>20个提升JavaScript性能的技巧，涵盖代码优化、内存管理和渲染性能...</p>
+                            <div class="blog-meta">
+                                <span>2023-10-01</span>
+                                <div class="read-more">阅读更多 →</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" onclick="location.href='#'">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80"
+                                alt="全栈开发">
+                        </div>
+                        <div class="blog-content">
+                            <h3>全栈开发者的技术栈演进</h3>
+                            <p>从MERN到JAMStack，现代全栈开发者的技术选择与学习路径...</p>
+                            <div class="blog-meta">
+                                <span>2023-09-24</span>
+                                <div class="read-more">阅读更多 →</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" onclick="location.href='#'">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1555066931-bf19f8fd1085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+                                alt="CSS">
+                        </div>
+                        <div class="blog-content">
+                            <h3>CSS Grid与Flexbox的实战应用</h3>
+                            <p>如何使用现代CSS布局技术创建响应式、灵活的界面设计...</p>
+                            <div class="blog-meta">
+                                <span>2023-09-18</span>
+                                <div class="read-more">阅读更多 →</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" onclick="location.href='#'">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="编程">
+                        </div>
+                        <div class="blog-content">
+                            <h3>编程思维培养：从问题解决到系统设计</h3>
+                            <p>如何培养高效的编程思维模式，提升解决复杂问题的能力...</p>
+                            <div class="blog-meta">
+                                <span>2023-09-10</span>
+                                <div class="read-more">阅读更多 →</div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- 主题切换按钮 -->
+    <button class="theme-toggle" id="themeToggle">🌙</button>
+
+    <!-- 返回顶部按钮 -->
+    <a class="to-top" href="#top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </a>
+
+    <script src="js/index-script.js"></script>
 </body>
 
 </html>
