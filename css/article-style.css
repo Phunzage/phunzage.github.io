@@ -321,6 +321,13 @@ img {
     box-shadow: var(--shadow-sm);
 }
 
+.article-body i {
+    display: block;
+    text-align: center;
+    font-size: smaller;
+    margin-top: -1rem;
+}
+
 .code-block {
     background: rgba(0, 0, 0, 0.05);
     border-radius: 8px;
