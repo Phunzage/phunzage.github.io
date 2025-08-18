@@ -138,7 +138,7 @@
                             <code data-syntax-language="go">
                             cntS1 := [26]int{}
                             for _, v := range s1 {
-                                cntS1[v-\'a\']++
+                                cntS1[v-\'a\']++    // 忽略转义字符“\”
                             }
                             cntS2 := [26]int{}
                             for i, v := range s2 {
