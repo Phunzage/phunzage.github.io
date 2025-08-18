@@ -105,7 +105,7 @@
                         <p>​ 题目：</p>
                         <p>​ 一个长度为 n+1 的数组，找一个定长为 k(k+1) 的和最大的子数组。</p>
                         <code data-syntax-language="tabbed">
-                            <code data-syntax-language="go">
+                            <code data-syntax-language="go" data-syntax-options="{ 'buttons': { 'showPrint': false } }">
                             n := len(startTime)	// 会议n的数量
                             free := make([]int, n+1)	// 空余空间要n+1
                             free[0] = startTime[0]	// 第一个空余空间
@@ -114,7 +114,7 @@
                             }
                             free[n] = eventTime - endTime[n-1]	// 最后一个空余空间
                             </code>
-                            <code data-syntax-language="c-plus-plus">
+                            <code data-syntax-language="c-plus-plus" data-syntax-options="{ 'buttons': { 'showPrint': false } }">
                             int n = startTime.size();
                             vector&lt;int&gt; free(n + 1);
                             free[0] = startTime[0];
@@ -135,7 +135,7 @@
                             </li>
                         </ul><br>
                         <code data-syntax-language="tabbed">
-                            <code data-syntax-language="go">
+                            <code data-syntax-language="go" data-syntax-options="{ 'buttons': { 'showPrint': false } }">
                             cntS1 := [26]int{}
                             for _, v := range s1 {
                                 cntS1[v-\'a\']++    // 忽略转义字符“\”
@@ -151,7 +151,7 @@
                                 }
                             }
                             </code>
-                        <code data-syntax-language="c-plus-plus">
+                        <code data-syntax-language="c-plus-plus" data-syntax-options="{ 'buttons': { 'showPrint': false } }">
                             array&lt;int, 26&gt; cntS1{};
                             for(char c : s1) {
                                 cntS1[c-\'a\']++;
@@ -182,7 +182,7 @@
                             0时，代表数组中还没有这个元素，kinds++，此后数组中进入该元素时不会触发kinds++。出元素时，若cntC[s[i] - \'a\'] ==
                             0，说明数组中该元素全部去除，kinds--，实现了和映射表相同的功能。</p>
                         <code data-syntax-language="tabbed">
-                            <code data-syntax-language="go">
+                            <code data-syntax-language="go" data-syntax-options="{ 'buttons': { 'showPrint': false } }">
                             for i := range s {
                                 if cntC[s[i]-\'a\'] == 0 {
                                     kinds++
@@ -196,7 +196,7 @@
                                 }
                             }
                             </code>
-                            <code data-syntax-language="c-plus-plus">
+                            <code data-syntax-language="c-plus-plus" data-syntax-options="{ 'buttons': { 'showPrint': false } }">
                             for (int i = 0; i &lt; n; i++) {
                                 if (cntC[s[i] - \'a\'] == 0) {
                                     kinds++;
