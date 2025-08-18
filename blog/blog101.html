@@ -97,7 +97,7 @@
                         <p>一个模板可解决大部分定长滑动窗口的题目</p>
                         <p><b>通用代码框架</b>：</p>
                         <code data-syntax-language="tabbed">
-                            <code data-syntax-language="go">
+                            <code data-syntax-language="go" data-syntax-options="{ 'buttons': { 'showPrint': false } }">
                             for i, in := range nums {
                                 // 入，未形成第一个窗口时，重复第一步
                                 if i < k-1 {
@@ -111,7 +111,7 @@
                                 sum-=nums[out]
                             }
                             </code>
-                            <code data-syntax-language="c-plus-plus">
+                            <code data-syntax-language="c-plus-plus" data-syntax-options="{ 'buttons': { 'showPrint': false } }">
                             for(int i = 0; i < nums.size(); i++) {
                                 // 入，未形成第一个窗口时，重复第一步
                                 if (i < k-1) {
@@ -127,7 +127,7 @@
                             </code>
                         </code><br>
                         <p>其中K为滑动窗口长度</p>
-                        <img src="../images/blog101/blog101-1.png" alt="image-20250803130910097">
+                        <img src="../images/blog101/blog101-1.png" alt="blog101-1">
                         <h2 id="section4">特例分析</h2>
                         <ul>
                             <li>对于1423，<b>逆向思维</b>，每次从两边取点数，可转化为总点数 - 中间滑动窗口的点数</li>
@@ -136,19 +136,19 @@
                             <li>对于1052，题目可转化为：挽留住最多的原本因为生气而被赶走顾客数。</li>
                             <li>对于1652，使用取模遍历数组达到循环效果：</li>
                         </ul>
-                        <img src="../images/blog101/blog101-2.png" alt="image-20250803130829655">
+                        <img src="../images/blog101/blog101-2.png" alt="blog101-2">
                         <h2 id="section5">进阶技巧</h2>
                         <ol>
                             <li><b>哈希表辅助计数</b></li>
                         </ol>
                         <p>当需要统计窗口内元素特征时（如唯一值、频次），结合map实时更新</p>
                         <code data-syntax-language="tabbed">
-                            <code data-syntax-language="go">
+                            <code data-syntax-language="go" data-syntax-options="{ 'buttons': { 'showPrint': false } }">
                             h := make(map[int]int)
                             h[v]++
                             len(h)	// 元素个数
                             </code>
-                            <code data-syntax-language="c-plus-plus">
+                            <code data-syntax-language="c-plus-plus" data-syntax-options="{ 'buttons': { 'showPrint': false } }">
                             unordered_map&lt;int, int&gt; h;
                             h[arr[i]]++;
                             h.size();	// 元素个数
