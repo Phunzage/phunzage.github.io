@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetCode 十题总结（二）滑动窗口 | PHUNZAGE</title>
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/article-style.css">
+    <link rel="stylesheet" href="../css/syntax.js.css">
+    <link rel="stylesheet" href="../css/themes/syntax.js.dark.theme.css">
+</head>
+
+<body id="top">
+    <div class="header">
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">P</div>
+                <h1>PHUNZAGE BLOG</h1>
+            </div>
+            <div class="nav-bar">
+                <a href="../index.html" class="nav-link">主页</a>
+                <a href="#" class="nav-link active">博客</a>
+                <a href="../friends.html" class="nav-link">友链</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <aside class="article-summary">
+                <h3>文章摘要</h3>
+                <p>
+                    LeetCode滑动窗口十题总结
+                </p>
+                <div class="toc-title">目录</div>
+                <ul class="toc-list">
+                    <li><a href="#section1">核心思想</a></li>
+                    <li><a href="#section2">十题回顾</a></li>
+                    <li><a href="#section3">特例分析</a></li>
+                    <li><a href="#section4">进阶技巧</a></li>
+                </ul>
+                <div class="tags-container">
+                    <div class="tags-title">标签</div>
+                    <div class="tags">
+                        <span class="tag">LeetCode</span>
+                        <span class="tag">力扣</span>
+                        <span class="tag">总结</span>
+                        <span class="tag">技巧</span>
+                        <span class="tag">滑动窗口</span>
+                    </div>
+                </div>
+            </aside>
+            <main>
+                <div class="article-content">
+                    <h1 class="article-title">LeetCode 十题总结（二）滑动窗口</h1>
+                    <div class="article-meta">
+                        <span>作者：Phunzage</span>
+                        <span>发布日期：2025-8-18</span>
+                        <span>最后编辑：2025-8-18</span>
+                    </div>
+                    <div class="article-body">
+                        <p>通过总结LeetCode题目，回顾所学知识、巩固编程基础，学习新技巧并提升问题解决能力。</p>
+                        <p>本文为定长滑动窗口进阶</p>
+                        <h2 id="section1">核心思想</h2>
+                        <p><b>滑动窗口</b>通过动态维护一个固定/可变大小的窗口区间，避免重复计算实现高效求解。定长滑动窗口特点：</p>
+                        <ol>
+                            <li>窗口大小固定为 <code>k</code></li>
+                            <li>通过「右移一位」更新窗口</li>
+                            <li>时间复杂度优化至 O(n)</li>
+                        </ol>
+                        <h2 id="section2">十题回顾</h2>
+                        <h3>定长滑动窗口</h3>
+                        <ul>
+                            <li><a href="https://leetcode.cn/problems/reschedule-meetings-for-maximum-free-time-i/"
+                                    target="_blank">3439. 重新安排会议得到最多空余时间 I</a></li>
+                            <li><a href="https://leetcode.cn/problems/minimum-swaps-to-group-all-1s-together-ii/"
+                                    target="_blank">2134. 最少交换次数来组合所有的 1 II</a></li>
+                            <li><a href="https://leetcode.cn/problems/maximum-number-of-occurrences-of-a-substring/"
+                                    target="_blank">1297. 子串的最大出现次数</a></li>
+                            <li><a href="https://leetcode.cn/problems/sliding-subarray-beauty/" target="_blank">2653.
+                                    滑动子数组的美丽值</a></li>
+                            <li><a href="https://leetcode.cn/problems/permutation-in-string/" target="_blank">567.
+                                    字符串的排列</a></li>
+                            <li><a href="https://leetcode.cn/problems/find-all-anagrams-in-a-string/"
+                                    target="_blank">438. 找到字符串中所有字母异位词</a></li>
+                            <li><a href="https://leetcode.cn/problems/find-all-k-distant-indices-in-an-array/"
+                                    target="_blank">2200. 找出数组中的所有 K 近邻下标</a></li>
+                            <li><a href="https://leetcode.cn/problems/find-the-k-beauty-of-a-number/"
+                                    target="_blank">2269. 找到一个数字的 K 美丽值</a></li>
+                            <li><a href="https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/"
+                                    target="_blank">1984. 学生分数的最小差值</a></li>
+                            <li><a href="https://leetcode.cn/problems/check-if-a-string-contains-all-binary-codes-of-size-k/"
+                                    target="_blank">1461. 检查一个字符串是否包含所有长度为 K 的二进制子串</a></li>
+                        </ul>
+                        <h2 id="section3">特例分析</h2>
+                        <ul>
+                            <li>对于3439，</li>
+                        </ul>
+                        <p>​ 抽象：定长k</p>
+                        <p>​ 移动 1 个会议，等于移动 2 个空余空间，移动 2 个会议，等于移动 3 个空余空间：</p>
+                        <p>​ 移动 k 个会议，等于移动 k+1 个空余空间，即 k=k+1；</p>
+                        <p>​ 抽象：数组free</p>
+                        <p>​ 一个会议有 2 个空余空间（前后，可为 0），2 个会议有 3 个空余空间</p>
+                        <p>​ n 个会议有 n+1 个空余空间，所以空余空间数组 free 的长度为 n+1;</p>
+                        <p>​ 题目：</p>
+                        <p>​ 一个长度为 n+1 的数组，找一个定长为 k(k+1) 的和最大的子数组。</p>
+                        <code data-syntax-language="tabbed">
+                            <code data-syntax-language="go">
+                            n := len(startTime)	// 会议n的数量
+                            free := make([]int, n+1)	// 空余空间要n+1
+                            free[0] = startTime[0]	// 第一个空余空间
+                            for i := 1; i &lt; n; i++ {
+                                free[i] = startTime[i] - endTime[i-1]	// 第二到第n个空余空间
+                            }
+                            free[n] = eventTime - endTime[n-1]	// 最后一个空余空间
+                            </code>
+                        <code data-syntax-language="c-plus-plus">
+                            int n = startTime.size();
+                            vector&lt;int&gt; free(n + 1);
+                            free[0] = startTime[0];
+                            for (int i = 1; i &lt; n; i++) {
+                                free[i] = startTime[i] - endTime[i - 1];
+                            }
+                            free[n] = eventTime - endTime[n - 1];
+                            </code>
+                        </code><br>
+                        <ul>
+                            <li>对于2134，三个注意点：1. k 是数组中1的数量。2. 找 k 长的子数组中 0 最少的。3. 循环数组，数组索引从0开始到 n+k-1，取模遍历数组达到循环效果。
+                            </li>
+                            <li>对于1297，映射表计数。</li>
+                            <li>对于2653，要点：1. 将负数+50映射到0~49。2. 找第x小的元素（计数排序）</li>
+                            <li>对于567，C++中，除内置数组 <code>int[]</code> 外，<code>std::array<int></code>、
+                                <code>std::map</code> 和 <code>unordered_map</code> 和 <code>unordered_set</code>
+                                都可比较；Go中的数组之间可以比较，但是切片与切片，<code>map</code> 与 <code>map</code> 之间不可以比较
+                            </li>
+                        </ul>
+                        <code data-syntax-language="tabbed">
+                            <code data-syntax-language="go">
+                            cntS1 := [26]int{}
+                            for _, v := range s1 {
+                                cntS1[v-'a']++
+                            }
+                            cntS2 := [26]int{}
+                            for i, v := range s2 {
+                                cntS2[v-'a']++
+                                if i &lt; k-1 {
+                                    continue
+                                }
+                                if cntS2 == cntS1 {	// Go数组可以比较
+                                    return true
+                                }
+                            }
+                            </code>
+                        <code data-syntax-language="c-plus-plus">
+                            array&lt;int, 26&gt; cntS1{};
+                            for(char c : s1) {
+                                cntS1[c-'a']++;
+                            }
+                            array&lt;int, 26&gt; cntS2{};
+                            for(int i = 0; i &lt; n; i++) {
+                                cntS2[s2[i] - 'a']++;
+                                if(i &lt; k-1) {
+                                    continue;
+                                }
+                                if(cntS1 == cntS2) {	// C++的std::array&lt;int&gt;可以比较
+                                    return true;
+                                }
+                            }
+                            </code>
+                        </code><br>
+                        <ul>
+                            <li>对于2200，</li>
+                        </ul>
+                        <p>方法一：先找到目标值 key，然后将 j 移动到目标值左侧的位置（有重叠时自动取最大），j不断向右移动到 i + k ，加入符合条件的值</p>
+                        <p>方法二：首先移动 j ，当 j < i - k 时（未进入有效区间），或者 nums[j] !=key 时，j 不断移动，直到 j 处于 i - k 的区间右侧且值等于 key
+                                ，开始判断 j 是否 <=i + k的右侧区间，满足则加入 i 值，以此类推</p>
+                        <h2 id="section4">进阶技巧</h2>
+                        <ol>
+                            <li><b>数组计数</b></li>
+                        </ol>
+                        <p>映射表可以用来表示元素出现的次数，在1297题中，可以使用数组加计数：cntC[s[i] - 'a'] ==
+                            0时，代表数组中还没有这个元素，kinds++，此后数组中进入该元素时不会触发kinds++。出元素时，若cntC[s[i] - 'a'] ==
+                            0，说明数组中该元素全部去除，kinds--，实现了和映射表相同的功能。</p>
+                        <code data-syntax-language="tabbed">
+                            <code data-syntax-language="go">
+                            for i := range s {
+                                if cntC[s[i]-'a'] == 0 {
+                                    kinds++
+                                }
+                                cntC[s[i] - 'a']++
+                                ```其他代码```
+                                out := s[i-k+1]
+                                cntC[out - 'a']--
+                                if cntC[out - 'a'] == 0 {
+                                    kinds--
+                                }
+                            }
+                            </code>
+                        <code data-syntax-language="c-plus-plus">
+                            for (int i = 0; i &lt; n; i++) {
+                                if (cntC[s[i] - 'a'] == 0) {
+                                    kinds++;
+                                }
+                                cntC[s[i] - 'a']++;
+                                ```其他代码```
+                                int out = s[i - k + 1];
+                                if (--cntC[out - 'a'] == 0) {	// 先去掉元素，若元素个数为0，kinds--
+                                    kinds--;
+                                }
+                            }
+                            </code>
+                        </code><br>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <button class="theme-toggle" id="themeToggle">🌙</button>
+    <a class="to-top" href="#top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </a>
+    <script src="../js/syntax.min.js"></script>
+    <script src="../js/languages/syntax.go.js"></script>
+    <script src="../js/languages/syntax.c-plus-plus.js"></script>
+    <script src="../js/article-script.js"></script>
+</body>
+
+</html>
