@@ -80,25 +80,6 @@ document.addEventListener('DOMContentLoaded', function () {
         body.setAttribute('data-theme', theme);
         updateThemeIcon(theme);
         localStorage.setItem('theme', theme);
-
-        // 新增：更新代码块主题
-        updateCodeBlockTheme(theme);
-    };
-
-    // 新增：更新代码块主题的函数
-    const updateCodeBlockTheme = (theme) => {
-        // 查找所有代码容器
-        const codeContainers = document.querySelectorAll('.syntax-container');
-        
-        // 更新每个代码容器的主题
-        codeContainers.forEach(container => {
-            container.setAttribute('data-theme', theme);
-        });
-        
-        // 重新应用高亮以确保主题生效
-        Syntax.highlight({
-            theme: theme
-        });
     };
 
     // 主题切换事件
@@ -106,6 +87,10 @@ document.addEventListener('DOMContentLoaded', function () {
         const currentTheme = body.getAttribute('data-theme');
         const newTheme = currentTheme === 'light' ? 'dark' : 'light';
         applyTheme(newTheme);
+
+        Syntax.highlight({
+            theme: newTheme
+        });
     });
 
     // 加载保存的主题
