@@ -133,16 +133,16 @@
                                 <code>std::map</code> 和 <code>unordered_map</code> 和 <code>unordered_set</code>
                                 都可比较；Go中的数组之间可以比较，但是切片与切片，<code>map</code> 与 <code>map</code> 之间不可以比较
                             </li>
-                        </ul>
+                        </ul><br>
                         <code data-syntax-language="tabbed">
                             <code data-syntax-language="go">
                             cntS1 := [26]int{}
                             for _, v := range s1 {
-                                cntS1[v-'a']++
+                                cntS1[v-\'a\']++
                             }
                             cntS2 := [26]int{}
                             for i, v := range s2 {
-                                cntS2[v-'a']++
+                                cntS2[v-\'a\']++
                                 if i &lt; k-1 {
                                     continue
                                 }
@@ -154,11 +154,11 @@
                         <code data-syntax-language="c-plus-plus">
                             array&lt;int, 26&gt; cntS1{};
                             for(char c : s1) {
-                                cntS1[c-'a']++;
+                                cntS1[c-\'a\']++;
                             }
                             array&lt;int, 26&gt; cntS2{};
                             for(int i = 0; i &lt; n; i++) {
-                                cntS2[s2[i] - 'a']++;
+                                cntS2[s2[i] - \'a\']++;
                                 if(i &lt; k-1) {
                                     continue;
                                 }
@@ -178,33 +178,33 @@
                         <ol>
                             <li><b>数组计数</b></li>
                         </ol>
-                        <p>映射表可以用来表示元素出现的次数，在1297题中，可以使用数组加计数：cntC[s[i] - 'a'] ==
-                            0时，代表数组中还没有这个元素，kinds++，此后数组中进入该元素时不会触发kinds++。出元素时，若cntC[s[i] - 'a'] ==
+                        <p>映射表可以用来表示元素出现的次数，在1297题中，可以使用数组加计数：cntC[s[i] - \'a\'] ==
+                            0时，代表数组中还没有这个元素，kinds++，此后数组中进入该元素时不会触发kinds++。出元素时，若cntC[s[i] - \'a\'] ==
                             0，说明数组中该元素全部去除，kinds--，实现了和映射表相同的功能。</p>
                         <code data-syntax-language="tabbed">
                             <code data-syntax-language="go">
                             for i := range s {
-                                if cntC[s[i]-'a'] == 0 {
+                                if cntC[s[i]-\'a\'] == 0 {
                                     kinds++
                                 }
-                                cntC[s[i] - 'a']++
+                                cntC[s[i] - \'a\']++
                                 ```其他代码```
                                 out := s[i-k+1]
-                                cntC[out - 'a']--
-                                if cntC[out - 'a'] == 0 {
+                                cntC[out - \'a\']--
+                                if cntC[out - \'a\'] == 0 {
                                     kinds--
                                 }
                             }
                             </code>
                             <code data-syntax-language="c-plus-plus">
                             for (int i = 0; i &lt; n; i++) {
-                                if (cntC[s[i] - 'a'] == 0) {
+                                if (cntC[s[i] - \'a\'] == 0) {
                                     kinds++;
                                 }
-                                cntC[s[i] - 'a']++;
+                                cntC[s[i] - \'a\']++;
                                 ```其他代码```
                                 int out = s[i - k + 1];
-                                if (--cntC[out - 'a'] == 0) {	// 先去掉元素，若元素个数为0，kinds--
+                                if (--cntC[out - \'a\'] == 0) {	// 先去掉元素，若元素个数为0，kinds--
                                     kinds--;
                                 }
                             }
