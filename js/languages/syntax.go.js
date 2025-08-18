@@ -1,0 +1,35 @@
+/*! Syntax.js v3.1.0 | (c) Bunoon 2024 | MIT License */
+$syntax.addLanguage( "go", {
+    friendlyName: "Go",
+    keywords: [
+        "break",
+        "default",
+        "func",
+        "interface",
+        "select",
+        "case",
+        "defer",
+        "go",
+        "map",
+        "struct",
+        "chan",
+        "else",
+        "goto",
+        "package",
+        "switch",
+        "const",
+        "fallthrough",
+        "if",
+        "range",
+        "type",
+        "continue",
+        "for",
+        "import",
+        "return",
+        "var"     
+    ],
+    comment: "//",
+    multiLineComment: [ "/*", "*/" ],
+    caseSensitive: true,
+    keywordsCasing: "initial"
+}, false );

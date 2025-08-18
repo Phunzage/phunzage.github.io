@@ -87,9 +87,22 @@ document.addEventListener('DOMContentLoaded', function () {
         const currentTheme = body.getAttribute('data-theme');
         const newTheme = currentTheme === 'light' ? 'dark' : 'light';
         applyTheme(newTheme);
+
+        Syntax.highlight({
+            theme: newTheme
+        });
     });
 
     // 加载保存的主题
     const savedTheme = localStorage.getItem('theme') || 'light';
     applyTheme(savedTheme);
+    
+    // 新增：初始化Syntax.js代码高亮
+    Syntax.highlight({
+        theme: savedTheme,     // 使用主题
+        showLanguage: true,    // 显示语言标签
+        lineNumbers: true,     // 显示行号
+        addClipboard: true,    // 添加复制按钮
+        maxHeight: '400px'     // 代码块最大高度
+    });
 });

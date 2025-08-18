@@ -1,0 +1,55 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Colors */
+        --syntax-js-color-keyword: #f47067;
+        --syntax-js-color-value: #F28C28;
+        --syntax-js-color-attribute: #dcbdfb;
+        --syntax-js-color-keyword-hover: #ff8080;
+        --syntax-js-color-value-hover: #FFAC1C;
+        --syntax-js-color-attribute-hover: #f2e7fe;
+        --syntax-js-color-comment: #8edb8c;
+        --syntax-js-color-multi-line-comment: var(--syntax-js-color-comment);
+        --syntax-js-color-string: #96d0ff;
+        --syntax-js-color-multi-line-string: var(--syntax-js-color-string);
+        --syntax-js-color-black: #acbac7;
+        --syntax-js-color-white: var(--syntax-js-color-black);
+        --syntax-js-color-dark-gray: #808080;
+        --syntax-js-color-gray: var(--syntax-js-color-dark-gray);
+        --syntax-js-color-lighter-gray: #C0C0C0;
+
+        /* Containers */
+        --syntax-js-container-background-color: #1c2128;
+        --syntax-js-container-border-color: #454c56;
+        --syntax-js-container-syntax-background-color: #2d333b;
+        --syntax-js-container-syntax-border-color: var(--syntax-js-container-border-color);
+        --syntax-js-container-numbers-background-color: #24292e;
+        --syntax-js-container-numbers-border-color: var(--syntax-js-container-border-color);
+        --syntax-js-container-description-background-color: var(--syntax-js-container-numbers-background-color);
+        --syntax-js-container-description-border-color: var(--syntax-js-container-numbers-border-color);
+
+        /* Tabs */
+        --syntax-js-tab-background-color: #F5F5F5;
+        --syntax-js-tab-text-color: #3b3a3a;
+        --syntax-js-tab-border-color: var(--syntax-js-tab-text-color);
+        --syntax-js-tab-active-background-color: var(--syntax-js-container-syntax-background-color);
+        --syntax-js-tab-active-text-color: var(--syntax-js-tab-background-color);
+        --syntax-js-tab-active-border-color: var(--syntax-js-container-syntax-border-color);
+        --syntax-js-tab-hover-background-color: var(--syntax-js-color-lighter-gray);
+        --syntax-js-tab-hover-text-color: var(--syntax-js-tab-text-color);
+        --syntax-js-tab-hover-border-color: var(--syntax-js-tab-text-color);
+
+        /* Buttons */
+        --syntax-js-button-background-color: #F5F5F5;
+        --syntax-js-button-text-color: #3b3a3a;
+        --syntax-js-button-hover-background-color: var(--syntax-js-color-lighter-gray);
+        --syntax-js-button-hover-text-color: var(--syntax-js-button-text-color);
+
+        /* Borders */
+        --syntax-js-border-radius: 0.5rem;
+        --syntax-js-border-style-scrollbar: inset 0 0 6px --syntax-js-color-dark-gray;
+        --syntax-js-border-size: 0.5px;
+
+        /* Transitions */
+        --syntax-js-transition: all .3s;
+      }
+}

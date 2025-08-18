@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetCode 十题总结（一）滑动窗口 | PHUNZAGE</title>
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/article-style.css">
+    <link rel="stylesheet" href="../css/syntax.js.css">
+    <link rel="stylesheet" href="../css/themes/syntax.js.dark.theme.css">
+</head>
+
+<body id="top">
+    <div class="header">
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">P</div>
+                <h1>PHUNZAGE BLOG</h1>
+            </div>
+            <div class="nav-bar">
+                <a href="../index.html" class="nav-link">主页</a>
+                <a href="#" class="nav-link active">博客</a>
+                <a href="../friends.html" class="nav-link">友链</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <aside class="article-summary">
+                <h3>文章摘要</h3>
+                <p>
+                    LeetCode滑动窗口十题总结
+                </p>
+                <div class="toc-title">目录</div>
+                <ul class="toc-list">
+                    <li><a href="#section1">核心思想</a></li>
+                    <li><a href="#section2">十题回顾</a></li>
+                    <li><a href="#section3">方法模板</a></li>
+                    <li><a href="#section4">特例分析</a></li>
+                    <li><a href="#section5">进阶技巧</a></li>
+                </ul>
+                <div class="tags-container">
+                    <div class="tags-title">标签</div>
+                    <div class="tags">
+                        <span class="tag">LeetCode</span>
+                        <span class="tag">力扣</span>
+                        <span class="tag">总结</span>
+                        <span class="tag">技巧</span>
+                        <span class="tag">滑动窗口</span>
+                    </div>
+                </div>
+            </aside>
+            <main>
+                <div class="article-content">
+                    <h1 class="article-title">LeetCode 十题总结（一）滑动窗口</h1>
+                    <div class="article-meta">
+                        <span>作者：Phunzage</span>
+                        <span>发布日期：2025-7-25</span>
+                        <span>最后编辑：2025-8-18</span>
+                    </div>
+                    <div class="article-body">
+                        <p>通过总结LeetCode题目，回顾所学知识、巩固编程基础，学习新技巧并提升问题解决能力。</p>
+                        <p>本文为定长滑动窗口</p>
+                        <h2 id="section1">核心思想</h2>
+                        <p><b>滑动窗口</b>通过动态维护一个固定/可变大小的窗口区间，避免重复计算实现高效求解。定长滑动窗口特点：</p>
+                        <ol>
+                            <li>窗口大小固定为 <code>k</code></li>
+                            <li>通过「右移一位」更新窗口</li>
+                            <li>时间复杂度优化至 O(n)</li>
+                        </ol>
+                        <h2 id="section2">十题回顾</h2>
+                        <h3>定长滑动窗口</h3>
+                        <ul>
+                            <li><a href="https://leetcode.cn/problems/maximum-number-of-vowels-in-a-substring-of-given-length/"
+                                    target="_blank">1465. 定长子串中元音的最大数目</a></li>
+                            <li><a href="https://leetcode.cn/problems/maximum-average-subarray-i/" target="_blank">643.
+                                    子数组最大平均数 I</a></li>
+                            <li><a href="https://leetcode.cn/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/"
+                                    target="_blank">1343. 大小为 K 且平均值大于等于阈值的子数组数目</a></li>
+                            <li><a href="https://leetcode.cn/problems/k-radius-subarray-averages/" target="_blank">2090.
+                                    半径为 k 的子数组平均值</a></li>
+                            <li><a href="https://leetcode.cn/problems/minimum-recolors-to-get-k-consecutive-black-blocks/"
+                                    target="_blank">2379. 得到 K 个黑块的最少涂色次数</a></li>
+                            <li><a href="https://leetcode.cn/problems/maximum-sum-of-almost-unique-subarray/"
+                                    target="_blank">2841. 几乎唯一子数组的最大和</a></li>
+                            <li><a href="https://leetcode.cn/problems/maximum-sum-of-distinct-subarrays-with-length-k/"
+                                    target="_blank">2461. 长度为 K 子数组中的最大和</a></li>
+                            <li><a href="https://leetcode.cn/problems/maximum-points-you-can-obtain-from-cards/"
+                                    target="_blank">1423. 可获得的最大点数</a></li>
+                            <li><a href="https://leetcode.cn/problems/grumpy-bookstore-owner/" target="_blank">1052.
+                                    爱生气的书店老板</a></li>
+                            <li><a href="https://leetcode.cn/problems/defuse-the-bomb/" target="_blank">1652. 拆炸弹</a>
+                            </li>
+                        </ul>
+                        <h2 id="section3">方法模板</h2>
+                        <p>一个模板可解决大部分定长滑动窗口的题目</p>
+                        <p><b>通用代码框架</b>：</p>
+                        <code data-syntax-language="tabbed">
+                            <code data-syntax-language="go">
+                            for i, in := range nums {
+                                // 入，未形成第一个窗口时，重复第一步
+                                if i < k-1 {
+                                    continue
+                                }
+                                sum+=in	// 对于求和
+                                // 更新答案
+                                res = max(res, sum)	// 对于最大值
+                                // 出
+                                out := i-k+1
+                                sum-=nums[out]
+                            }
+                            </code>
+                            <code data-syntax-language="c-plus-plus">
+                            for(int i = 0; i < nums.size(); i++) {
+                                // 入，未形成第一个窗口时，重复第一步
+                                if (i < k-1) {
+                                    continue;
+                                }
+                                sum+=nums[i];	// 对于求和
+                                // 更新答案
+                                res = max(res, sum);	// 对于最大值
+                                // 出
+                                out = nums[i-k+1];
+                                sum-=out;
+                            }
+                            </code>
+                        </code><br>
+                        <p>其中K为滑动窗口长度</p>
+                        <img src="../images/blog101/blog101-1.png" alt="image-20250803130910097">
+                        <h2 id="section4">特例分析</h2>
+                        <ul>
+                            <li>对于1423，<b>逆向思维</b>，每次从两边取点数，可转化为总点数 - 中间滑动窗口的点数</li>
+                            <li>对于643，结果存在负数，将初始值res设为0，通过简单的max比大小无法取得正确结果，此时可将res设为 math.MinInt(Go)、INT_MIN(c++)
+                                int类型的最小值</li>
+                            <li>对于1052，题目可转化为：挽留住最多的原本因为生气而被赶走顾客数。</li>
+                            <li>对于1652，使用取模遍历数组达到循环效果：</li>
+                        </ul>
+                        <img src="../images/blog101/blog101-2.png" alt="image-20250803130829655">
+                        <h2 id="section5">进阶技巧</h2>
+                        <ol>
+                            <li><b>哈希表辅助计数</b></li>
+                        </ol>
+                        <p>当需要统计窗口内元素特征时（如唯一值、频次），结合map实时更新</p>
+                        <code data-syntax-language="tabbed">
+                            <code data-syntax-language="go">
+                            h := make(map[int]int)
+                            h[v]++
+                            len(h)	// 元素个数
+                            </code>
+                            <code data-syntax-language="c-plus-plus">
+                            unordered_map&lt;int, int&gt; h;
+                            h[arr[i]]++;
+                            h.size();	// 元素个数
+                            </code>
+                        </code>
+                        <br>
+                        <p>要特别注意，当表内元素频次为 0 时，要删除此元素</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <button class="theme-toggle" id="themeToggle">🌙</button>
+    <a class="to-top" href="#top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </a>
+    <script src="../js/syntax.min.js"></script>
+    <script src="../js/languages/syntax.go.js"></script>
+    <script src="../js/languages/syntax.c-plus-plus.js"></script>
+    <script src="../js/article-script.js"></script>
+</body>
+
+</html>
